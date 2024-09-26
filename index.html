@@ -15,135 +15,83 @@
         <img src="Home%20page%20photo.JPG" alt="Welcome Photo" class="home-photo">
     </header>
 
-    <!-- Navigation -->
+    <!-- Navigation Tabs -->
     <nav>
         <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#internship">Internship</a></li>
-            <li><a href="#mentorship">Mentorship</a></li>
-            <li><a href="#leadership">Leadership Experiences</a></li>
-            <li><a href="#achievements">Achievements</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#resume">Resume</a></li>
-            <li><a href="#contact">Contact Me</a></li>
+            <li><a href="#about" onclick="showSection('about')">About Me</a></li>
+            <li><a href="#internship" onclick="showSection('internship')">Internship</a></li>
+            <li><a href="#mentorship" onclick="showSection('mentorship')">Mentorship</a></li>
+            <li><a href="#leadership" onclick="showSection('leadership')">Leadership Experiences</a></li>
+            <li><a href="#achievements" onclick="showSection('achievements')">Achievements</a></li>
+            <li><a href="#projects" onclick="showSection('projects')">Projects</a></li>
+            <li><a href="#resume" onclick="showSection('resume')">Resume</a></li>
+            <li><a href="#contact" onclick="showSection('contact')">Contact Me</a></li>
         </ul>
     </nav>
 
+    <!-- Sections Start -->
+    
     <!-- About Me Section -->
-    <section id="about">
+    <section id="about" class="content-section">
         <h2>About Me</h2>
         <div class="about-container">
             <img src="Photo%20of%20myself.HEIC" alt="Aidan's Photo" class="profile-photo">
             <p>
                 I am a graduate from Nanyang Polytechnic with a Diploma in Pharmaceutical Science. I am a dynamic and results-driven individual with a unique blend of skills and qualities like communication, teamwork, willingness to learn, and even the ability to accept my failure makes me a valuable asset to your organization.
             </p>
+
+            <!-- Contact Info -->
+            <p>Phone: +65 87179708 | Email: <a href="mailto:aidanho777@gmail.com">aidanho777@gmail.com</a></p>
+
+            <!-- ATM Gene Guidelines Paper Download -->
+            <a href="ATM_Gene_Guidelines_Draft_8_Aidan.pdf" download class="download-btn">Download My ATM Gene Guidelines Paper</a>
+
+            <!-- AI Teacher Levonne Link -->
+            <p>Check out my AI Teacher, <a href="https://chatgpt.com/g/g-Y9jYpxYiJ-levonne" target="_blank">Levonne</a>.</p>
         </div>
     </section>
 
-    <!-- Internship Section -->
-    <section id="internship">
+    <!-- Internship Section (will only show when clicked) -->
+    <section id="internship" class="content-section">
         <h2>Internship</h2>
-        <p>Details of my internship experience at National Cancer Centre Singapore, where I contributed to various research projects and developed important skills like patient recruitment, data management, and critical thinking.</p>
+        <p>Details about my internship experience at National Cancer Centre Singapore.</p>
+        <!-- More content can be added here -->
     </section>
 
     <!-- Mentorship Section -->
-    <section id="mentorship">
+    <section id="mentorship" class="content-section">
         <h2>Mentorship</h2>
-        <p>My experience mentoring juniors and peers in pharmaceutical science, providing guidance on academic and career paths, and helping them navigate challenges in the field.</p>
+        <p>Details about my mentorship experiences.</p>
+        <!-- More content can be added here -->
     </section>
 
     <!-- Leadership Section -->
-    <section id="leadership">
+    <section id="leadership" class="content-section">
         <h2>Leadership Experiences</h2>
-        <p>Overview of leadership roles I've held, including team leader for school projects and student-led initiatives that developed my leadership and communication skills.</p>
+        <p>Details about leadership roles and experiences.</p>
+        <!-- More content can be added here -->
     </section>
 
     <!-- Achievements Section -->
-<section id="achievements">
-    <h2>Achievements</h2>
-    <blockquote>"Only those who dare to fail greatly can ever achieve greatly" - Robert F. Kennedy</blockquote>
+    <section id="achievements" class="content-section">
+        <h2>Achievements</h2>
+        <blockquote>"Only those who dare to fail greatly can ever achieve greatly" - Robert F. Kennedy</blockquote>
 
-    <div class="achievement-container">
-        <div class="achievement-item">
-            <h3>September 2022</h3>
-            <h4>Certificate of Achievement School of Applied Science (SAS) FIESTA</h4>
-            <p>Participated in pitching the team's I&E (Innovation & Enterprise) project at the School of Applied Science (SAS) FIESTA, a showcase of students' I&E ideas and projects after their Foundation I&E curriculum.</p>
+        <div class="achievement-container">
+            <div class="achievement-item">
+                <h3>September 2022</h3>
+                <h4>Certificate of Achievement, School of Applied Science (SAS) FIESTA</h4>
+                <p>Participated in pitching the team's I&E (Innovation & Enterprise) project.</p>
+                <!-- Placeholder for mini column/photo -->
+            </div>
+            <!-- More achievements can follow -->
         </div>
-
-        <div class="achievement-item">
-            <h3>December 2020</h3>
-            <h4>EDUSAVE SCHOLARSHIP, Ministry of Education, Singapore</h4>
-            <p>Awarded to students in the top 10% of their level and course in terms of academic performance and demonstrated good conduct.</p>
-        </div>
-
-        <div class="achievement-item">
-            <h3>October 2020</h3>
-            <h4>National Youth Achievement Award (Silver), National Youth Achievement Award, Singapore</h4>
-            <p>The NYAA Programme aims to encourage young people between the ages of 13 and 30 to develop personal qualities of self-reliance, perseverance, and responsibility.</p>
-        </div>
-
-        <div class="achievement-item">
-            <h3>December 2019</h3>
-            <h4>EDUSAVE GOOD PROGRESS AWARD, Ministry of Education, Singapore</h4>
-            <p>Given to students within the top 10% of their level and course in terms of improvement in academic performance and demonstrated good conduct.</p>
-        </div>
-
-        <div class="achievement-item">
-            <h3>November 2019</h3>
-            <h4>EDUSAVE CERTIFICATE OF ACADEMIC ACHIEVEMENT, Ministry of Education, Singapore</h4>
-            <p>Awarded to students among the top 25% of their level and course.</p>
-        </div>
-
-        <div class="achievement-item">
-            <h3>December 2018</h3>
-            <h4>EDUSAVE GOOD PROGRESS AWARD, Ministry of Education, Singapore</h4>
-            <p>Given to students within the top 10% of their level and course in terms of improvement in academic performance and demonstrated good conduct.</p>
-        </div>
-
-        <div class="achievement-item">
-            <h3>2017</h3>
-            <h4>National School Games, National Rugby Championships 2017</h4>
-            <p>Represented the School and obtained 3rd place in C Division Boys, Singapore Schools Sports Council.</p>
-        </div>
-
-        <div class="achievement-item">
-            <h3>November 2016</h3>
-            <h4>EDUSAVE GOOD PROGRESS AWARD, Ministry of Education, Singapore</h4>
-            <p>Given to students within the top 10% of their level and course in terms of improvement in academic performance and demonstrated good conduct.</p>
-        </div>
-    </div>
-</section>
-
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>Projects</h2>
-        <h3>2024 Projects</h3>
-        <ul>
-            <li>Project 1 - Description</li>
-            <li>Project 2 - Description</li>
-        </ul>
-
-        <h3>2023 Projects</h3>
-        <ul>
-            <li>Project 1 - Description</li>
-            <li>Project 2 - Description</li>
-        </ul>
-
-        <h3>2022 Projects</h3>
-        <ul>
-            <li>Project 1 - Description</li>
-            <li>Project 2 - Description</li>
-        </ul>
     </section>
 
-    <!-- Resume Section -->
-    <section id="resume">
-        <h2>Resume</h2>
-        <a href="Aidan-Ho-Hayman-CV-Resume.pdf" download class="download-cv-btn">Download My Resume</a>
-    </section>
+    <!-- Other sections like Projects, Resume, Contact Me... -->
 
     <!-- Contact Section -->
-    <section id="contact">
+    <section id="contact" class="content-section">
         <h2>Contact Me</h2>
         <form id="contactForm">
             <label for="name">Name:</label>
@@ -163,6 +111,19 @@
         <p>&copy; 2024 Aidan's Portfolio</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+        // Function to show/hide sections based on the clicked tab
+        function showSection(sectionId) {
+            // Hide all sections
+            document.querySelectorAll('.content-section').forEach(function(section) {
+                section.style.display = 'none';
+            });
+            // Show the selected section
+            document.getElementById(sectionId).style.display = 'block';
+        }
+        
+        // Show the About Me section by default
+        showSection('about');
+    </script>
 </body>
 </html>
