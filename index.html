@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aidan's Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Home Page -->
+    <header>
+        <h1>Welcome to Aidan's Portfolio</h1>
+        <p>Your one-stop site for projects, CV, and research papers</p>
+        <!-- Reference your uploaded home page image -->
+        <img src="Home%20page%20photo.JPG" alt="Welcome Photo" class="home-photo">
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#research">Research Paper</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-container">
+            <!-- Image of yourself -->
+            <img src="Photo%20of%20myself.HEIC" alt="Aidan's Photo" class="profile-photo">
+
+            <!-- Paragraph about you -->
+            <p>
+                I am a graduate from Nanyang Polytechnic with a Diploma in Pharmaceutical Science. I am a dynamic and results-driven individual with a unique blend of skills and qualities like communication, teamwork, willingness to learn, and even the ability to accept my failure makes me a valuable asset to your organization. I thrive on challenges and innovation, and I bring a fresh perspective to problem-solving and strategic thinking.
+            </p>
+        </div>
+
+        <!-- Download CV Button -->
+        <a href="Aidan-Ho-Hayman-CV-Resume.pdf" download class="download-cv-btn">Download My CV</a>
+
+        <!-- Contact Info -->
+        <p>Phone: +65 87179708 | Email: <a href="mailto:aidanho777@gmail.com">aidanho777@gmail.com</a></p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <h3>2024 Projects</h3>
+        <ul>
+            <li>Project 1 - Description</li>
+            <li>Project 2 - Description</li>
+        </ul>
+
+        <h3>2023 Projects</h3>
+        <ul>
+            <li>Project 1 - Description</li>
+            <li>Project 2 - Description</li>
+        </ul>
+
+        <h3>2022 Projects</h3>
+        <ul>
+            <li>Project 1 - Description</li>
+            <li>Project 2 - Description</li>
+        </ul>
+    </section>
+
+    <!-- Research Paper Section -->
+    <section id="research">
+        <h2>ATM Gene Guidelines Research Paper</h2>
+        <a href="ATM_Gene_Guideline_Research_Paper.pdf" download class="download-research-btn">Download Research Paper</a>
+        <p>Learn more about the research on the ATM gene and its management.</p>
+
+        <!-- AI Teacher Link -->
+        <h3>AI Teacher Levonne</h3>
+        <p>Check out <a href="your-ai-teacher-link.com" target="_blank">Levonne</a>, the AI teacher I created to help students studying pharmaceutical science.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Aidan's Website</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
