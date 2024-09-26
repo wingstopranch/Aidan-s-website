@@ -173,6 +173,51 @@ button:hover {
     background-color: #555;
 }
 
+/* Achievements Section */
+#achievements {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+    margin: 20px auto;
+    border-radius: 10px;
+    width: 80%;
+}
+
+#achievements blockquote {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.achievement-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.achievement-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.achievement-item h3 {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.achievement-item h4 {
+    font-size: 1.1em;
+    color: #007bff;
+}
+
+.achievement-item p {
+    font-size: 0.95em;
+    color: #666;
+}
+
 /* Footer Styling */
 footer {
     text-align: center;
@@ -184,7 +229,7 @@ footer {
 
 /* Media Queries (Mobile View) */
 @media (max-width: 768px) {
-    .about-container, #projects, #research, #contact {
+    .about-container, #projects, #research, #contact, #achievements {
         width: 90%;
     }
 }
