@@ -50,10 +50,10 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Home Page Image Styling - Reduced Size */
+/* Home Page Image Styling - Reduced to 50% */
 .home-photo {
-    max-width: 50%; /* Set the width to 50% */
-    height: auto;
+    max-width: 50%;  /* Set the width to 50% */
+    height: auto;  /* Maintain the aspect ratio */
     display: block;
     margin: 20px auto;
 }
@@ -70,7 +70,7 @@ nav ul li a:hover {
 
 /* Increased size for Profile Photo */
 .profile-photo {
-    width: 150px; /* Increased size */
+    width: 150px;  /* Increased size */
     height: auto;
     border-radius: 50%;
 }
@@ -116,4 +116,11 @@ footer {
     background-color: #333;
     color: white;
     margin-top: 40px;
+}
+
+/* Media Queries (Mobile View) */
+@media (max-width: 768px) {
+    .about-container, #projects, #research, #contact, #achievements {
+        width: 90%;
+    }
 }
