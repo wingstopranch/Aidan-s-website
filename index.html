@@ -18,7 +18,7 @@
 
     <!-- Navigation Tabs -->
     <nav>
-        <ul>
+        <ul class="fixed-nav">
             <li><a href="#about" onclick="showSection('about')">About Me</a></li>
             <li><a href="#internship" onclick="showSection('internship')">Internship</a></li>
             <li><a href="#mentorship" onclick="showSection('mentorship')">Mentorship</a></li>
@@ -33,13 +33,13 @@
     <!-- Sections Start -->
 
     <!-- About Me Section -->
-    <section id="about" class="content-section">
+    <section id="about" class="content-section fade-in">
         <h2>About Me</h2>
         <div class="about-container">
-            <!-- Profile photo size increased -->
+            <!-- Profile photo size increased to double -->
             <img src="Photo_of_myself.jpg" alt="Aidan's Photo" class="profile-photo">
             <p>
-                I am a graduate from Nanyang Polytechnic with a Diploma in Pharmaceutical Science. I am a dynamic and results-driven individual with a unique blend of skills and qualities like communication, teamwork, willingness to learn, and even the ability to accept my failure makes me a valuable asset to your organization.
+                I am a graduate from Nanyang Polytechnic with a Diploma in Pharmaceutical Science. I am a dynamic and results-driven individual with a unique blend of skills and qualities like communication, teamwork, willingness to learn, and the ability to accept failure. I bring a fresh perspective to problem-solving and strategic thinking.
             </p>
 
             <!-- Contact Info -->
@@ -90,9 +90,19 @@
                 </div>
             </div>
 
-            <!-- Skills and Expertise (You can add your content here) -->
+            <!-- Skills and Expertise (Updated content) -->
             <h3>Skills and Expertise</h3>
-            <p>Detail your skills and expertise here, like proficiency in research, communication, teamwork, etc.</p>
+            <ul class="skills-list">
+                <li>Microsoft Excel - Proficient</li>
+                <li>Data Cleaning</li>
+                <li>VBA</li>
+                <li>Comprehensive knowledge of formulas</li>
+                <li>Microsoft Word - Proficient</li>
+                <li>Microsoft PowerPoint - Proficient</li>
+                <li>Qualtrics - Proficient</li>
+                <li>Canva - Proficient</li>
+                <li>IBM SPSS Software - Proficient</li>
+            </ul>
 
             <!-- Contact Me Section -->
             <h3>Contact Me</h3>
@@ -115,7 +125,7 @@
     </section>
 
     <!-- Internship Section -->
-    <section id="internship" class="content-section">
+    <section id="internship" class="content-section fade-in">
         <h2>Internship</h2>
         <p>The Cancer Genetics Service at the National Cancer Centre Singapore provides genetic counselling to individuals with a family history of cancer. Led by Dr. Joanne Ngeow, I contributed by conducting a systematic review, writing ATM gene guidelines, and much more.</p>
         <ul>
@@ -129,7 +139,7 @@
     </section>
 
     <!-- Leadership Experience Section -->
-    <section id="leadership" class="content-section">
+    <section id="leadership" class="content-section fade-in">
         <h2>Leadership Experiences</h2>
         <ul>
             <li><strong>Nov 2023-Jan 2024</strong> - Open House Organiser for School Tours</li>
@@ -142,13 +152,13 @@
     </section>
 
     <!-- Projects & Enrichment Section -->
-    <section id="projects" class="content-section">
+    <section id="projects" class="content-section fade-in">
         <h2>Projects & Enrichment</h2>
         <p>Details about my projects and enrichment activities will go here.</p>
     </section>
 
     <!-- Achievements Section -->
-    <section id="achievements" class="content-section">
+    <section id="achievements" class="content-section fade-in">
         <h2>Achievements</h2>
         <blockquote>"Only those who dare to fail greatly can ever achieve greatly" - Robert F. Kennedy</blockquote>
         <div class="achievement-container">
@@ -166,6 +176,26 @@
 
             <!-- More achievements here -->
         </div>
+    </section>
+
+    <!-- Contact Section (at the bottom of each section) -->
+    <section id="contact" class="content-section fade-in">
+        <h2>Contact Me</h2>
+        <form>
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
     </section>
 
     <footer>
