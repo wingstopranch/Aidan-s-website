@@ -50,23 +50,15 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Content Sections */
-.content-section {
-    display: none;
-    padding: 50px 20px;
-    text-align: center;
-    background-color: white;
-    margin: 20px auto;
-    border-radius: 10px;
-    width: 80%;
-}
-
-/* Show the section when clicked */
-.content-section.active {
+/* Home Page Image Styling - Reduced Size */
+.home-photo {
+    max-width: 50%; /* Set the width to 50% */
+    height: auto;
     display: block;
+    margin: 20px auto;
 }
 
-/* About Section */
+/* About Me Section */
 .about-container {
     display: flex;
     flex-direction: column;
@@ -76,8 +68,9 @@ nav ul li a:hover {
     padding: 50px 20px;
 }
 
+/* Increased size for Profile Photo */
 .profile-photo {
-    width: 100px;
+    width: 150px; /* Increased size */
     height: auto;
     border-radius: 50%;
 }
