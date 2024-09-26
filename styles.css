@@ -1,0 +1,190 @@
+/* General Styling */
+body {
+    font-family: 'Roboto', sans-serif; /* Use a Google Font */
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    background-color: #282c34;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Navigation Styling */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background-color: #333;
+    padding: 15px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Home Page Image Styling */
+.home-photo {
+    max-width: 300px; /* Set a fixed width for the image */
+    height: auto; /* Keep the aspect ratio */
+    border-radius: 10px;
+    display: block;
+    margin: 20px auto;
+}
+
+/* About Section */
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 50px 20px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.profile-photo {
+    width: 100px; /* Make the profile image a reasonable size */
+    height: auto;
+    border-radius: 50%;
+}
+
+.about-container p {
+    font-size: 1.1em;
+}
+
+/* Button Styling */
+.download-cv-btn, .download-research-btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    margin: 20px 0;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.download-cv-btn:hover, .download-research-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Projects Section */
+#projects {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f0f0f0;
+    margin: 20px auto;
+    border-radius: 10px;
+    width: 80%;
+}
+
+#projects h2, #research h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#projects ul {
+    list-style: none;
+    padding: 0;
+}
+
+#projects li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+/* Research Paper Section */
+#research {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: white;
+    margin: 20px auto;
+    border-radius: 10px;
+    width: 80%;
+}
+
+/* Contact Section */
+#contact {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f0f0f0;
+    margin: 20px auto;
+    border-radius: 10px;
+    width: 80%;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+input, textarea {
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 40px;
+}
+
+/* Media Queries (Mobile View) */
+@media (max-width: 768px) {
+    .about-container, #projects, #research, #contact {
+        width: 90%;
+    }
+}
