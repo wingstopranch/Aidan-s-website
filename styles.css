@@ -24,14 +24,17 @@ header p {
     font-size: 1.2em;
 }
 
-/* Navigation Styling */
-nav ul {
+/* Navigation Styling (Fixed) */
+nav ul.fixed-nav {
     list-style: none;
     padding: 0;
     margin: 0;
-    text-align: center;
     background-color: #333;
-    padding: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
 }
 
 nav ul li {
@@ -46,8 +49,19 @@ nav ul li a {
     font-size: 1.1em;
 }
 
-nav ul li a:hover {
+nav ul li a:hover, nav ul li a.active {
     text-decoration: underline;
+    background-color: #007bff;
+}
+
+/* Animations */
+.fade-in {
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 /* Home Page Image Styling */
@@ -70,13 +84,24 @@ nav ul li a:hover {
 
 /* Increased size for Profile Photo */
 .profile-photo {
-    width: 150px;
+    width: 300px;
     height: auto;
     border-radius: 50%;
 }
 
 .about-container p {
     font-size: 1.1em;
+}
+
+/* Skills Section */
+.skills-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills-list li {
+    font-size: 1.1em;
+    margin: 5px 0;
 }
 
 /* Education Section Styling */
